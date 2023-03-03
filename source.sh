@@ -1,10 +1,13 @@
 #!/bin/bash
 
-# if [ ! -f '~/finema/keripy/keripy/bin/activate' ]; then
+
+# home=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && cd ~ &> /dev/null && pwd)
+
+# if [ ! -f "${home}/finema/keripy/keripy/bin/activate" ]; then
 #     echo "Cannot activate keripy python virtual environment at ~/finema/keripy/keripy/bin/activate." >&2 ; 
 #     return
 # fi
-# source ~/finema/keripy/keripy/bin/activate
+# source ${home}/finema/keripy/keripy/bin/activate
 
 if [ -z "$1" ]; then
     echo "Need controller name" >&2 ; 
