@@ -22,7 +22,10 @@ export KERI_SCRIPT_DIR="${script_dir}"
 export NAME=$1
 export SALT=0ADRKKBF1p_mRoZ9keSvSlbE
 
+echo "Removing the following directories and files"
 rm -rf -v "${BASE_DIR}/keri/$1"
 rm -rf -v "${BASE_DIR}/keri/$1.json"
+echo "Finish removing"
 
+echo "create the directory ${base_dir}/keri/ as the key store (ks)"
 mkdir -p "${base_dir}/keri/"
